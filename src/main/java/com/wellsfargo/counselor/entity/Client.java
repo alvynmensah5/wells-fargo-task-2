@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
+@Entity
 public class Client {
 
     @Id
@@ -38,7 +39,7 @@ public class Client {
         this.email = email;
     }
 
-    public Long getAdvisorId() {
+    public Long getClientId() {
         return clientId;
     }
 
